@@ -268,3 +268,7 @@ footer .fine { margin-top: 26px; font-size: 0.9rem; line-height: 1.5; border-top
 
 /* los anclajes (#play, #trailer...) no quedan tapados por la barra fija */
 section[id], [id].anchor { scroll-margin-top: 76px; }
+
+/* textos largos (politica de privacidad) */
+.prose { max-width: 760px; }
+.prose p { margin: 0 0 12px; line-height: 1.6; font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; font-size: 1rem; }
