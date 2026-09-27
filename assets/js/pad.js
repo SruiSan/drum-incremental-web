@@ -25,6 +25,8 @@
 
   var $ = function (sel) { return root.querySelector(sel); };
   var stage = $(".stage"), fx = $(".fx"), steps = $(".steps"), rname = $(".rname");
+  // el destello rojo del fallo dura lo que su animacion: sin esto el pad quedaba tenido para siempre
+  stage.addEventListener("animationend", function () { stage.classList.remove("miss"); });
   var prEl = $(".pr .num"), comboEl = $(".combo"), cyclesEl = $(".cycles"), live = $(".sr-live");
   var bubble = $(".bubble"), face = $(".teacher img"), faceLbl = $(".teacher .face");
   var armL = $(".arm.left"), armR = $(".arm.right"), done = $(".done-card");
